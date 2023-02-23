@@ -1,5 +1,5 @@
 example = "1 2 3\n4 5 6\n7 8 9"
-ttt_template = ["", "", "", "\n", "", "", "", "\n", "", "", ""]
+ttt_template = [" ", " ", " ", "\n", " ", " ", " ", "\n", " ", " ", " "]
 print("Welcome to Tic-Tac-Toe!!!\n")
 print(f"The grid numbers are below: \n\n{example}\n")
 input("Press enter to start the game\n")
@@ -51,8 +51,10 @@ def check_if_won(letter, player_name):
 
 
 def show_board():
+    board = ""
     for letter in ttt_template:
-        print(letter[0:8])
+        board += letter
+    print(board)
 
 
 game()
